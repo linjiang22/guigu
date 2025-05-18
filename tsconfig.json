@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "include":["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/vite-env.d.ts"],
+  "compilerOptions":{
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "composite": true,
+    "baseUrl": "./",
+    "module": "NodeNext",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": ["vite/client"]
+  }
+}
