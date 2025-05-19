@@ -35,3 +35,4 @@ request.interceptors.response.use((response)=>{
       break;
   }
 })
+export default request;

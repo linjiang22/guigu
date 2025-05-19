@@ -1,17 +1,22 @@
 <template>
   <div>
-    <el-button type="primary">Primary</el-button>
-    <el-button type="danger">删除</el-button>
-    <el-pagination layout="prev, pager, next, jumper" :total="1000" />
+    <router-view></router-view>
   </div>
-  <SvgIcon name="vue"></SvgIcon>
+
 </template>
 
 <script setup lang="ts">
 import SvgIcon from './components/SvgIcon/index.vue'
 import { ref } from 'vue'
+import router from './router'
 const iconName = ref('vue')
 console.log(iconName.value) // 确保输出 'vue'
+import { onMounted } from 'vue';
+// import { reqLogin } from './api/user'
+// onMounted(() => {
+//   reqLogin({userName:'111',password:'123456'})
+// })测试api接口
+
 </script>
 
 <style scoped></style>
