@@ -1,6 +1,6 @@
 //定义参数数据类型
 export interface loginForm{
-  userName:string,
+  username:string,
   password:string,
 }
 
